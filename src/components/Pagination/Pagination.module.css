@@ -1,0 +1,38 @@
+.pagination {
+    width: 100%;
+    text-align: center;
+    margin: 14px 0px 28px 0px;
+}
+
+h1 {
+    color: white;
+}
+
+.first, .prev, .actualPage, .last, .next {
+    display: inline-block;
+    color: white;
+    cursor: default;
+    background-color: rgba(68, 68, 68, 0.434);
+    border: solid hsla(0, 0%, 21%, 0.50) 2px;
+    font-weight: 600;
+    padding: 8px 15px;
+    
+}
+
+.first, .prev {
+    border-radius: 10px 0px 0px 10px;
+    cursor: pointer;
+    
+    
+}
+
+.last, .next {
+    border-radius: 0px 10px 10px 0px;
+    cursor: pointer;
+}
+
+.first, .last {
+    color: hsla(0, 0%, 100%, 0.25);
+    cursor: default;
+}
+

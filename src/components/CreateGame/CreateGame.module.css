@@ -1,0 +1,183 @@
+
+.main{
+    /* margin: 0;
+    padding: 0; */
+    background-image: url(../../resources/creategame.jpg);  
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    /* min-width: 100vw; */
+    min-height: 100vh; 
+    width: 100%;
+    
+    
+    
+    /* height: 100%;
+    width: 100%;  */
+    background-attachment: fixed; 
+    /* height:100vh;
+    width: 100vw; */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    position: absolute;
+
+    animation: fadeIn 1s ease;
+    
+    
+    
+}
+
+.container {
+     
+ 
+    /* height: 100vh;
+    background-color: rgba(68, 68, 68, 0.434);
+    border: solid #FFD700 2px;
+    margin: 30px ; 
+    width: 100vw;
+    height: 50px; 
+    border-radius: 10px;
+    padding: 7.5px;
+    text-decoration: none;
+    text-align: center;
+    font-family: 'TTVTechPrecomput', sans-serif;  */
+    
+
+    /* background-color: hsla(0, 0%, 19%, 0.75);
+    border: solid #FFD700 2px;
+    margin: 30px ;
+    /* width: 50rem; */
+    /* border-radius: 10px;
+    padding: 7.5px;
+    text-decoration: none;
+    text-align: center;
+    /* min-width: 300px; */
+    /* width:50em;
+    height:50em;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center; */
+    /* justify-content: space-around; */ 
+
+    background-color: rgba(68, 68, 68, 0.434);
+    border: hsla(0, 0%, 21%, 0.50) 2px;
+
+    margin: 30px auto;
+    width: 50rem;
+    border-radius: 10px;
+    padding: 7.5px;
+    text-decoration: none;
+    text-align: center;
+    /* flex-flow:row wrap;
+    display: -webkit-flex; */
+    max-width: 90vw;
+    position: relative;
+    top: 0;
+    
+    
+                                                 
+}
+
+
+
+
+@keyframes fadeIn {
+    0%{
+        opacity:0;
+        filter:blur(20px);
+    }
+    10%{
+        opacity:1;
+        filter:brightness(2) blur(10px);
+    }
+    
+}
+
+.container h1 {
+    color: white;
+    text-align: center;
+}
+
+.container div{
+    color: white;
+    display: inline-flex;
+    width: 100%;
+    margin: 5px auto;
+    text-align: left;
+}
+
+.container div div button{
+    display: inline-flex;
+    border: solid hsla(0, 0%, 100%, 0.5) 1.5px;
+    color: hsla(0, 0%, 100%, 0.25);
+    background-color: Transparent;
+    border-radius: 5px;
+    font-size: 14px;
+    padding: 4px;
+    font-weight: 500;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.container div div input, .container div div textarea{
+    display: inline-flex;
+    border: solid #C4AF3D 1.5px;
+    color: white;
+    background-color: Transparent;
+    border-radius: 5px;
+    font-size: 14px;
+    padding: 10px;
+    font-weight: 500;
+    margin: 5px;
+    cursor: select;
+    width: calc(100% - 62px);
+    /* width: 100%; */
+    resize: none;
+}
+.container div div span {
+    border: none;
+    display: block;
+    color: #C4AF3D;
+    margin:auto;
+    margin-left: 20px;
+    font-family: 'TTVTechPrecomput', sans-serif;
+}
+
+.container div div .active{
+    border: solid #C4AF3D 1.5px;
+    color: white;
+}
+
+.container div label{
+    width: 130px;
+    margin: auto 0px auto 20px;
+    text-align: left;
+    font-weight: bold;
+    font-size: 20px;
+    color: #e3e9f9;
+}
+
+.container div div{
+    display: inline-block;
+    color: white;
+    width: calc(100% - 28px);
+    margin: .5rem;
+}
+
+.button {
+    color: #C4AF3D;
+    background-color: hsla(0, 0%, 19%, 0.75);
+    border: solid #C4AF3D 3px;
+    font-weight: 500;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 10px 50px;
+    margin: 10px;
+    cursor: pointer; 
+    
+    
+}

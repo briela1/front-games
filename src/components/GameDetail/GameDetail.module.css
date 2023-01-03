@@ -1,0 +1,126 @@
+.background{
+    background-image: url(../../resources/daywallpaper.png);
+    background-position: center;
+    padding-top:5px;
+    padding-bottom: 30px;
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh; 
+    width: 100%;
+    background-attachment: fixed; 
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+
+    position: absolute;
+
+   
+}
+
+.container {
+    background-color:  rgba(68, 68, 68, 0.434);
+    border: hsla(0, 0%, 21%, 0.50) 2px;
+    margin: 30px auto;
+    width: 50rem; 
+    /* width: 100%; */
+    border-radius: 10px;
+    padding: 7.5px;
+    text-decoration: none;
+    /* text-align: center; */
+    max-width: 95vw;
+    /* max-width: 800px; */
+
+    position: relative;
+    top: 0;
+    /* justify-items: center; */
+    animation: fadeIn 1s ease;
+}
+
+.container h1 {
+    color: white;
+    text-align: center;
+    margin: 20px;
+    font-weight: bold;
+}
+
+.container img {
+    /* width: 100%; */
+   width:  calc(100% - 40px);
+    height: calc(100% - 40px);
+    margin-bottom: 10px;
+    max-width: 800px;
+    max-height: 500px;
+}
+
+.container div{
+    display: inline-flex;
+    color: #e3e9f9;
+    text-align: left;
+    margin: 5px auto;
+    width: 100%;
+    max-width: 800px;
+}
+
+.container div div span{
+    display: inline-flex;
+    border: solid #C4AF3D 1.5px;
+    color:   #e3e9f9;
+    border-radius: 5px;
+    font-size: 25px;
+    padding: 4px;
+    font-weight: 500;
+    margin: 5px;
+}
+
+.container div label{
+    width: 130px;
+    margin: auto 0px auto 20px;
+    text-align: left;
+    font-weight: bold;
+    font-size: 25px;
+
+    
+}
+
+.container div div{
+    display: inline-block;
+    color: #e3e9f9;
+    width: calc(100% - 10px);
+    max-width: 800px;
+}
+
+.container .description {
+    color:  #e3e9f9;
+    text-align: justify;
+    margin: 10px auto 20px;
+    width: calc(100% - 40px);
+    font-size: 22px;
+    max-width: 800px;
+    font-weight: semibold;
+    
+}
+
+.image{
+    animation: fadeIn 2s ease;
+    align-items: flex-start;
+    
+    
+                              
+}
+
+
+@keyframes fadeIn {
+    0%{
+        opacity:0;
+        filter:blur(20px);
+    }
+    10%{
+        opacity:1;
+        filter:brightness(2) blur(10px);
+    }
+    
+}
+

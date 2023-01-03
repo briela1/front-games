@@ -1,0 +1,319 @@
+*{
+    padding:0px;
+    margin:0px;
+    font-family: 'TTVTechPrecomput', sans-serif;
+    box-sizing: border-box;
+}
+
+
+
+body{
+    background-image: url(../../resources/wallpaperhome.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+     height: 100vh;
+     /* width: 100%;  */
+    /* width:100vw;  */
+    /* width:100vw; */
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* min-height: 100%; */
+   
+   
+    
+
+}
+.background{
+    
+    font-family: 'TTVTechPrecomput', sans-serif;
+    font-size: 30px;
+    
+    /* background-color: #0000CD; */
+    /* background-image: url(../../resources/wallpaperhome.jpg); */
+    /* background-position: center;
+    background-repeat: no-repeat;      */
+    /* height: 220vh; */
+    /* display:flex;
+    flex-wrap: wrap;
+    gap: 1rem; */
+    /* display: flex;
+    flex-wrap: wrap; */
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.wrapper {
+    /* display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-family: 'TTVTechPrecomput', sans-serif; */
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 15px; 
+    /* margin:150px; */
+    animation: fadeIn 3s ease;
+    
+
+}
+
+
+
+
+
+@keyframes fadeIn {
+    0%{
+        opacity:0;
+        filter:blur(20px);
+    }
+    10%{
+        opacity:1;
+        filter:brightness(2) blur(10px);
+    }
+
+}
+
+.filter, .search {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: .01rem;
+}
+
+.filter {
+    padding-top: 20px;
+    display: flex;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 0px;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    margin-top: 25px;
+    margin-bottom: 50px;
+    justify-content: center;
+    padding: .1rem;
+}
+
+ /* .filter select, .filter button, .search input, .search button {
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    cursor: pointer;
+    font-weight: 600;
+} */
+
+.search input {
+    cursor: text;
+    width: 19rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+  
+    
+}
+
+/* .filter select, .search input {
+    color: white;
+    background-color: hsla(0, 0%, 19%, 0.75);
+    border: solid hsla(0, 0%, 21%, 0.50) 2px;
+} */
+/*
+.filter button, .search button {
+    color: #C4AF3D;
+    background-color: hsla(0, 0%, 19%, 0.75);
+    border: solid #C4AF3D 2px;
+} */
+
+.btnfinal{
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border:0;
+    vertical-align: middle;
+    text-decoration: none;
+    font-size: 1rem;
+    font-family: inherit;
+    background: #7ecbfb ;
+    margin: 0;
+}
+
+
+.btnfinal{
+    /* border-radius: 30px;
+    border: 5px solid #272727;
+    list-style: none;
+    color:#252422;
+    font-family: 'TTVTechPrecomput', sans-serif;
+    font-weight: bold;
+    padding: 12px 16px;
+    margin: 0 8px;
+    position: relative;
+    cursor: pointer;
+    white-space: nowrap;
+    padding: 8px 20px;
+    outline: none;
+    cursor: pointer;
+    font-size: 30px;
+    background-color: #FFD700; */
+
+  padding: 1.25em 2em;
+  border: 2px solid #b18597;
+  border-radius: 0.75em;
+  font-weight: 700;
+  color: #382b22;
+  text-transform: uppercase;
+  background: #fff0f0;
+  transform-style: preserve-3d;
+    transition: -15s cubic-bezier(0,0, .6,1);
+
+
+
+}
+
+.btnfinal::before{
+    content: "";
+    position:absolute;
+    top:0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    background: #f9c4d2;
+    box-shadow: 0 0 0 2px #b18597,0 .625em 0 0 #ffe3e2;
+    transform: translate3d(0, .75em, -1em);
+    transition: -15s cubic-bezier(0,0, .6,1);
+}
+
+.btnfinal:hover{
+    background:#ffe9e9;
+    transform: translate(0, .25em);
+}
+
+.btnfinal:hover::before{
+    box-shadow: 0 0 0 2px #b18597, 0 .5em 0 0 #ffe3e2;;
+    transform: translate3d(0, .5em, -1em);
+}
+
+.btnfinal:active{
+    background: #ffe9e9;
+    transform: translate(0. .75em);
+}
+
+.btnfinal:active::before{
+    box-shadow: 0 0 0 2px #b18597, 0 0 #ffe3e2;;
+    transform: translate3d(0, 0, -1em);
+}
+
+.namefilt{
+    color: #e5e5e5;
+    background: #747474a4;;
+    border: 3px solid #272727;
+    border-radius: 15px;
+    font-family: 'TTVTechPrecomput', sans-serif;
+    font-size: 30px;
+    /* padding: 10px ; */
+    text-align: center;
+
+
+}
+
+
+.neu{
+    background-color:  transparent;
+    font-weight: bold;
+    color:  #444 ;
+    font-size: 1rem;
+    padding: 1rem 1.5rem;
+    border: 2px solid #7fccfb ;
+    border-radius: .5rem;
+    cursor: pointer;
+    transition: all 1s ease;
+    box-shadow: .5rem .5rem 1rem #71b6df,
+    -.5rem -.5rem 1rem  #8de2ff;
+
+}   
+
+.neu:hover{
+    box-shadow: .5rem .5rem 1rem  #8de2ff,
+    -.5rem -.5rem 1rem #71b6df; 
+}
+
+.neu:active{
+    box-shadow: inset .5rem .5rem 1rem  #8de2ff,
+    inset -.5rem -.5rem 1rem #71b6df;  
+}
+
+.filtneu{
+    background-color:  transparent;
+    font-weight: semibold;
+    color:  #444 ;
+    font-size: 1rem;
+    padding: 1rem 1.5rem;
+    border: 2px solid #7fccfb ;
+    border-radius: .5rem;
+    cursor: pointer;
+    transition: all 1s ease;
+    box-shadow: inset .5rem .5rem 1rem  #70b4dd,
+    inset -.5rem -.5rem 1rem #8ee4ff; 
+    margin: .4rem;
+    
+}
+
+input{
+    border: none;
+    outline: none;
+    /* margin: .1rem; */
+}
+
+.filtneu2{
+    background-color:  transparent;
+    font-weight: semibold;
+    color:  #444 ;
+    font-size: 1rem;
+    padding: .3rem .5rem;
+    border: 2px solid #7fccfb ;
+    border-radius: .5rem;
+    cursor: pointer;
+    transition: all 1s ease;
+    box-shadow:   .5rem .5rem 1rem  #70b4dd,
+      -.5rem -.5rem 1rem #8ee4ff; 
+     text-align: center;
+     /* justify-content: center; */
+     margin: .4rem;
+     
+}
+
+select{
+    border: none;
+    outline: none;
+    /* margin: .1rem; */
+    
+    
+}
+
+option { 
+   
+    color: #444; 
+    background-color: #7fccfb; 
+    /* justify-content: center; */
+    /* justify-items: center;  */
+    /* text-align: center; */
+    
+    
+    
+}
