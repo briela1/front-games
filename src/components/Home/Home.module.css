@@ -1,7 +1,7 @@
 *{
     padding:0px;
     margin:0px;
-    font-family: 'TTVTechPrecomput', sans-serif;
+    font-family: 'VT323', monospace;
     box-sizing: border-box;
 }
 
@@ -28,7 +28,7 @@ body{
 }
 .background{
     
-    font-family: 'TTVTechPrecomput', sans-serif;
+    font-family: 'VT323', monospace;
     font-size: 30px;
     
     /* background-color: #0000CD; */
@@ -224,7 +224,7 @@ body{
     background: #747474a4;;
     border: 3px solid #272727;
     border-radius: 15px;
-    font-family: 'TTVTechPrecomput', sans-serif;
+    font-family: 'VT323', monospace;
     font-size: 30px;
     /* padding: 10px ; */
     text-align: center;
