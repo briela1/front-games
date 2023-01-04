@@ -5,7 +5,7 @@ import { GET_GAMES, GET_GENRES, GET_GAME_DETAIL, CLEAN_DETAIL, CREATE_GAME } fro
 export const getGames = (Game = "") => {
     return function (dispatch) {
         axios
-            .get(`https://back-games-production.up.railway.app/videogames?name=${Game}`)
+            .get(`https://back-games-production-d5b5.up.railway.app/videogames?name=${Game}`)
             .then((response) => {
                 return response.data;
             })
@@ -16,7 +16,7 @@ export const getGames = (Game = "") => {
 
 export const getGenres = () => {
     return async (dispatch) => {
-        const videoGamesApi = await axios.get("https://back-games-production.up.railway.app/genres");
+        const videoGamesApi = await axios.get("https://back-games-production-d5b5.up.railway.app/genres");
         dispatch({type: GET_GENRES, payload: videoGamesApi.data});
     };
 };
@@ -24,7 +24,7 @@ export const getGenres = () => {
 export const getGameDetail = (id) => {
     return  function (dispatch) {
         axios
-        .get(`https://back-games-production.up.railway.app/videogame/${id}`)
+        .get(`https://back-games-production-d5b5.up.railway.app/videogame/${id}`)
         .then((resp) => dispatch({type: GET_GAME_DETAIL, payload: resp.data}))
     }};
 
@@ -34,7 +34,7 @@ export const cleanDetail = () => {
 
 export const createGame = (detail) => {
     return async (dispatch) => {
-        const videoGamesApi = await axios.post('https://back-games-production.up.railway.app/videogames', detail);
+        const videoGamesApi = await axios.post('https://back-games-production-d5b5.up.railway.app/videogames', detail);
         dispatch({type: CREATE_GAME, payload: videoGamesApi.data});
     };
 };
